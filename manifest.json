@@ -1,7 +1,7 @@
 {
     "id": "tps-projects",
     "name": "TPS Projects",
-    "version": "1.0.0",
+    "version": "v1.1.0",
     "minAppVersion": "1.0.0",
     "description": "Create different types of notes and display attached notes in an inline menu bar for easy access.",
     "author": "TishOS",
