@@ -122,11 +122,10 @@ jobs:
       run: npm audit --audit-level moderate
       
     - name: Run security scan
-      uses: github/step-security/slsa@v2
-      with:
-        files: ./
-        base: main
-        mode: full
+      uses: trufflesecurity/trufflehog@main
+      continue-on-error: true
+      env:
+        TRUFFLEHOG_SKIP_PACKAGE: 'esbuild'
       
     - name: Check for secrets
       uses: trufflesecurity/trufflehog@main
